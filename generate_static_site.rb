@@ -36,7 +36,7 @@ class Metatron
         end
       end
 
-      @html_pages << { "#{page['_id']}.html" => renderer.result(binding) }
+      @html_pages << { "#{page['url']}.html" => renderer.result(binding) }
     end
     @html_pages
   end
@@ -56,8 +56,15 @@ class Metatron
 
     next_url = @pages.find { |page| page['_id'] == next_page }['url']
 
-    { "#{start_page['_id']}.html" => renderer.result(binding) }
+    { "index.html" => renderer.result(binding) }
   end
 end
 
-puts Metatron.new.html
+Metatron.new.html.each do |metatron_page|
+  filename = metatron_page.keys.first
+  html = metatron_page[filename]
+  file = File.join(File.dirname(__FILE__), "public/#{filename}")
+
+  puts "Saving file #{file}"
+  File.write(file, html)
+end
