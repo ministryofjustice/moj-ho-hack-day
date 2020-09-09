@@ -29,6 +29,11 @@ class Metatron
       heading = page['heading']
       unless page['_type'] == 'page.confirmation'
         next_url = @pages.find { |page| page['_id'] == @steps[index + 1] }['url']
+        if index.zero?
+          back_url = 'index'
+        else
+          back_url = @pages.find { |page| page['_id'] == @steps[index - 1] }['url']
+        end
       end
 
       @html_pages << { "#{page['_id']}.html" => renderer.result(binding) }
