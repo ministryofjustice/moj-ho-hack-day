@@ -1,0 +1,26 @@
+{
+  "_id": "page.branch-question",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.branch-question--checkboxes",
+      "_type": "checkboxes",
+      "items": [
+        {
+          "_id": "page.branch-question--checkboxes--checkbox.auto_name__2",
+          "_type": "checkbox",
+          "label": "Is it true?",
+          "name": "branch-question-true"
+        },
+        {
+          "_id": "page.branch-question--checkboxes--checkbox.auto_name__5",
+          "_type": "checkbox",
+          "label": "Is it false?",
+          "name": "branch-question-false"
+        }
+      ],
+      "legend": "Answer the question!"
+    }
+  ],
+  "url": "branch-question"
+}

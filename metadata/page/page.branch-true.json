@@ -1,0 +1,17 @@
+{
+  "_id": "page.branch-true",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.branch-true--textarea.auto_name__6",
+      "_type": "textarea",
+      "label": "Why is is true?",
+      "name": "auto_name__6"
+    }
+  ],
+  "show": {
+    "identifier": "branch-question-true",
+    "operator": "defined"
+  },
+  "url": "branch-true"
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "page.start",
+  "_type": "page.start",
+  "heading": "MOJO - Hackday 09/09/20",
+  "lede": "Basic form to use for testing the Hackday's topic.",
+  "steps": [
+    "page.basic-details",
+    "page.branch-question",
+    "page.branch-true",
+    "page.check-answers",
+    "page.confirmation"
+  ],
+  "url": "/"
+}

@@ -1,0 +1,6 @@
+{
+  "_id": "service",
+  "_isa": "@ministryofjustice/fb-components=>service",
+  "_type": "config.service",
+  "name": "MOJO Hackday"
+}

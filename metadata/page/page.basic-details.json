@@ -1,0 +1,43 @@
+{
+  "_id": "page.basic-details",
+  "_type": "page.form",
+  "components": [
+    {
+      "$component": true,
+      "$control": true,
+      "$definition": true,
+      "$field": true,
+      "_id": "page.basic-details--text.auto_name__1",
+      "_type": "text",
+      "label": "Name",
+      "name": "text-name"
+    },
+    {
+      "$component": true,
+      "$control": true,
+      "$definition": true,
+      "$fields": true,
+      "_id": "page.basic-details--date.auto_name__3",
+      "_type": "date",
+      "legend": "Date",
+      "name": "date"
+    },
+    {
+      "$component": true,
+      "$control": true,
+      "$definition": true,
+      "$field": true,
+      "_id": "page.basic-details--email.auto_name__4",
+      "_type": "email",
+      "hint": "Not mandatory but includes regex pattern.",
+      "label": "Email Address",
+      "name": "basic-detail-email",
+      "validation": {
+        "format": "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$",
+        "required": false
+      }
+    }
+  ],
+  "heading": "Basic Details",
+  "url": "basic-details"
+}
